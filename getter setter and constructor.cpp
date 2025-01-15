@@ -21,11 +21,13 @@ class Division{
         string name;
         string power;
         int Health;
+        static string nickname;
     void Display(){
         cout << endl;
         cout<< name <<endl;
         cout<< power <<endl;
         cout<< Health <<endl;
+        cout << nickname << endl; 
         
     }
     int getRank(){
@@ -41,9 +43,11 @@ class Division{
     
 };
 
-
+string Division :: nickname = "heroacademia";
 
 int main() {
+    
+    cout << Division :: nickname << endl;
     
     Division assassin(5.6);
     assassin.name = "Attacker";
