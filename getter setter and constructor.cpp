@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//class definition
 class Division{
+//access specifiers private and public
     private:
         int Rank =5;
         int length; 
@@ -21,6 +22,7 @@ class Division{
         string name;
         string power;
         int Health;
+	//static variable declaration
         static string nickname;
     void Display(){
         cout << endl;
@@ -42,13 +44,14 @@ class Division{
 
     
 };
-
+//static variable call without object
 string Division :: nickname = "heroacademia";
 
 int main() {
-    
+    //static variable print
     cout << Division :: nickname << endl;
-    
+
+	//definition of first object
     Division assassin(5.6);
     assassin.name = "Attacker";
     assassin.power = "long-range";
