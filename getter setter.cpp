@@ -2,8 +2,8 @@
 using namespace std;
 
 //class name
+class Character{
 private:
-        class Character{
             int HP;
     
 public:
@@ -15,6 +15,13 @@ public:
         void setHP(int newHP){
             HP =  newHP;
         }
+//constructor without parameter
+	Hero (){
+		cout << "constructor without parameter" << endl;
+	}
+//constructor with parameter
+
+
         
     };
 
